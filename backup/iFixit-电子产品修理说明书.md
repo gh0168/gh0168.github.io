@@ -2,7 +2,7 @@
 > ## iFixit:你的免费电子产品修理说明书
 >[iFixit](https://zh.ifixit.com/)是一个致力于推广维修文化的开源平台，拥有全球最大的免费维修指南库。这里不仅是DIY爱好者的乐园，更是环保行动者的集结地。
 
-[![iFixit.png](https://i.postimg.cc/bNy02160/iFixit.png)](https://postimg.cc/rzHRBR2z)
+[![iFixit.jpg](https://i.postimg.cc/BbLr5tB4/iFixit.jpg)](https://postimg.cc/0KvXPk4B)
 
 ## 核心功能
 
