@@ -1,6 +1,7 @@
-![TinyPNG](https://github.com/user-attachments/assets/1a24bd18-8d19-47dc-92e7-7950bfd1ed6b)
+> [!TIP]
+>在当今快节奏的数字世界中，网站加载速度直接影响用户体验和SEO排名。TinyPNG作为一款强大的在线图片压缩工具，专为开发者、设计师和网站所有者打造，帮助您轻松优化AVIF、WebP、PNG和JPEG格式的图片，最高可减少80%的文件大小，而几乎不损失画质！  
 
-在当今快节奏的数字世界中，网站加载速度直接影响用户体验和SEO排名。TinyPNG作为一款强大的在线图片压缩工具，专为开发者、设计师和网站所有者打造，帮助您轻松优化AVIF、WebP、PNG和JPEG格式的图片，最高可减少80%的文件大小，而几乎不损失画质！  
+[![tinypng.png](https://i.postimg.cc/Zn0gTXyn/tinypng.png)](https://postimg.cc/4HkwPLPR)
 
 核心优势：  
  1️⃣ 智能压缩：采用独家算法，自动分析色彩与纹理，实现高效压缩。  
