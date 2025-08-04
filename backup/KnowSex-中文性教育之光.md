@@ -1,6 +1,6 @@
 > KnowSex：中文全面性教育的线上灯塔 
 
-![KnowSex](https://github.com/user-attachments/assets/7e20c061-a3f2-4441-b8be-23628a933bd6)
+[![KnowSex.png](https://i.postimg.cc/BQ4pcrvK/KnowSex.png)](https://postimg.cc/3Wf23bm8)
 
 🌟​​在性教育资源匮乏的中文互联网中，KnowSex 如同一盏明灯，致力于打破信息壁垒，为公众提供科学、易懂的性知识。
 🌍 无论你是青少年、家长还是教育工作者，这里都能找到可靠的内容。
