@@ -92,32 +92,37 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>包裹重量核验阶段，系统自动执行计算公式：包裹总重 = 纸箱重量 + 商品重量，并要求实际称重数值落在允许的合理偏差范围内。考虑到部分散装商品可能会因自然溢出等因素稍有超出标定重量，这个误差范围通常会被设计得具有一定包容性。</p>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/74178cf786eb859747af9b24efce98683324f88bcc0bdf136146307fe556114a/68747470733a2f2f692e706f7374696d672e63632f7654546d464457392fe58c85e8a3b9e7a7b0e9878de799bbe8aeb02e706e67"><img src="https://camo.githubusercontent.com/74178cf786eb859747af9b24efce98683324f88bcc0bdf136146307fe556114a/68747470733a2f2f692e706f7374696d672e63632f7654546d464457392fe58c85e8a3b9e7a7b0e9878de799bbe8aeb02e706e67" width="300" height="400" data-canonical-src="https://i.postimg.cc/vTTmFDW9/包裹称重登记.png" style="max-width: 100%; height: auto; max-height: 400px;"></a></p>
 <p>在包裹称重界面的精心设计中，涵盖了多项关键数据元素，诸如操作员信息、物流单号、外包装箱条形码、实时包裹重量、重量偏差值、预设标准重量以及包含外包装在内的总体重量等。当用户启动称重界面并把包裹置于电子秤台上时，包裹的实际重量将即刻动态显示于界面上，并且鼠标焦点会智能转移至物流单号的录入区域，待用户输入完成后，系统会自动引导至外箱条码的录入环节。一旦实际的外箱条码数据得到确认，系统会自动运算得出差重数值、匹配的标准重量及包含外包装在内的总重数据。对于已完成称重核实的包裹，系统会流畅地执行称重过程并同步播放一声清脆的完成提示音，以此标志称重作业的顺利结束。反之，针对未能通过系统验证的包裹，系统也会发出特定的警示音以示提醒。在整个流程中，只要差重控制在预设的可接受阈值内，称重操作即可顺遂进行。而若出现较大差重现象，则很可能意味着在拣货环节存在潜在问题，需要进一步核查修正。</p>
-<h3>使用SerialPort实现读取COM口获取包裹重量</h3>
-<h4>开始称重主方法代码</h4>
-<pre class="notranslate"><code class="notranslate">private void beginWeight()
+<p><strong>使用SerialPort实现读取COM口获取包裹重量</strong></p>
+<ul>
+<li>开始称重主方法代码</li>
+</ul>
+<pre class="notranslate"><code class="notranslate">
+private void beginWeight()
 {
-            try
-            {
-                timer1.Enabled = false;
-                serialPort1.Close(); //关闭COM口
-                GetSetComb();//设置Com口
+           try
+           {
+               timer1.Enabled = false;
+               serialPort1.Close(); //关闭COM口
+               GetSetComb();//设置Com口
 
-                interfaceUpdataHandle = new HandleInterfaceUpdataDelegate(UpdateTextBox);//实例化委托对象 
-                serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived); //接收COM口数据
-                if (!serialPort1.IsOpen)
-                {
-                    serialPort1.Open();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return;
-            }
-            timer1.Enabled = true;
+               interfaceUpdataHandle = new HandleInterfaceUpdataDelegate(UpdateTextBox);//实例化委托对象 
+               serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived); //接收COM口数据
+               if (!serialPort1.IsOpen)
+               {
+                   serialPort1.Open();
+               }
+           }
+           catch (Exception ex)
+           {
+               MessageBox.Show(ex.Message);
+               return;
+           }
+           timer1.Enabled = true;
 }
 </code></pre>
-<h4>设置COM口主要参数</h4>
+<ul>
+<li>设置COM口主要参数</li>
+</ul>
 <pre class="notranslate"><code class="notranslate"> private void GetSetComb()
  {
             try
@@ -134,7 +139,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
             }
 }
 </code></pre>
-<h4>DataReceived 和在TextBox实时显示重量的方法</h4>
+<ul>
+<li>DataReceived 和在TextBox实时显示重量的方法</li>
+</ul>
 <pre class="notranslate"><code class="notranslate">private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
 {
             int i = serialPort1.BytesToRead;
@@ -157,7 +164,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
                 }
             }            
 }
-</code></pre></div>
+</code></pre>
+</div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 欢迎PDD搜索 BitBetter ❤️</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
