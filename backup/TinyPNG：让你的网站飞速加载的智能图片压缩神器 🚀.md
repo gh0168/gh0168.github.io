@@ -13,6 +13,6 @@
 📱 开发者：通过API实现自动化图片优化，节省开发时间。  
 🎨 设计师：保持高清画质的同时，轻松缩减文件体积。  
 
-免费体验：访问[tinypng.com](https://tinypng.com "tinypng.com")，拖拽图片即可立即优化！付费订阅（Web Pro/Ultra）还能解锁更多高级功能，如无限制格式转换。 
+免费体验：访问[tinypng.com](https://tinypng.com "tinypng.com")，类似的网站还有 https://www.ezyzip.com/cn-png-100kb.html
 
 <!-- ##{"timestamp":1750815818}## -->
