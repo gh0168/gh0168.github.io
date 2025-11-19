@@ -26,7 +26,9 @@ Gmeek 是一个超轻量级的开源博客框架，完全依托 GitHub Pages、G
 2. 启用Pages：在仓库设置中开启GitHub Pages（选择GitHub Actions源）。  
 3. 写文章：在Issues中发布内容并打标签，静待自动部署完成！  
 
-> 示例链接：[Demo页面](https://meekdai.github.io "Demo页面") 
+> 示例链接：[Demo页面](https://ibitbetter.github.io/ "Demo页面") 
+
+[![demo](https://i.postimg.cc/tJkqyYWw/Snipaste-2025-11-19-10-13-55.png)](https://ibitbetter.github.io/)
 
 
 **🔧 技术栈**  
